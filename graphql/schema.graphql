@@ -5,11 +5,24 @@ type Person {
   gender: String!
 }
 
+type Movie {
+  id: Int!
+  title: String!
+  rating: Float!
+  summary: String!
+  language: String!
+  medium_cover_image: String!
+}
+
 # description of Query
 # `!` -> Required field (non-nullable)
 type Query {
   people: [Person]!
   person(id: Int!): Person
+
+  getMovies(limit: Int, rating: Float): [Movie]!
+  getMovie(id: Int!): Movie
+  getSuggestions(id: Int!): [Movie]!
 }
 
 # DB의 state를 변화시킴
