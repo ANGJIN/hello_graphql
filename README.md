@@ -2,8 +2,10 @@
 
 ## Start GraphQL Server
 
-> yarn install
-> yarn start
+```
+yarn install
+yarn start
+```
 
 `localhost:4000` 에서 GraphQL Playground 접속 가능. Playground 에서 Query 및 Mutation request를 보내고 response 를 받을 수 있다.
 
