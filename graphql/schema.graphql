@@ -1,0 +1,13 @@
+type Person {
+  id: Int!
+  name: String!
+  age: Int!
+  gender: String!
+}
+
+# description of Query
+# `!` -> Required field (non-nullable)
+type Query {
+  people: [Person]!
+  person(id: Int!): Person
+}
