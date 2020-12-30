@@ -11,3 +11,9 @@ type Query {
   people: [Person]!
   person(id: Int!): Person
 }
+
+# DB의 state를 변화시킴
+type Mutation {
+  addPerson(name: String!, age: Int!, gender: String): Person!
+  deletePerson(id: Int!): Boolean!
+}
